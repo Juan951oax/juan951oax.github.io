@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgb(228, 221, 235);
+    border: 3px solid black;
+    background-color: rgb(250, 52, 168) ;
+}
+
+button:hover{
+    background-color: rgb(173, 15, 107);
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(10, 10, 10); }
+
+header{
+    background-color: rgb(0, 0, 0);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: rgb(250, 52, 168);
+    font-size: 1.6em;
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: rgb(250, 52, 168);
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(228, 221, 235);
+}
+
+
+#somos-meta .contenedor{
+    text-align: center;
+    padding: 50px 8px;
+}
+#caracteristicas .contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 40vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgba(30,30,30);
+}
+
+footer p{
+    margin: 0;
+    padding: 30 px;
+    color: rgb(100,100,100);
+}
+
+footer .contenedor{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-meta .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-meta .texto{
+        width: 50%;
+        max-width: 300px;
+        text-align: initial;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-meta h2{
+        margin-top: 0px;
+    }
+
+    #somos-meta .img-contenedor6{
+        background-image: url("img/meta3.jpg" );
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 250px;
+        width: 350px;    
+    }
+    
+    
+    #somos-meta .img-contenedor7{
+        background-image: url("img/meta27.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px;
+    }
+    
+    
+    #somos-meta .img-contenedor8{
+        background-image: url("img/meta17.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+    
+    
+    #somos-meta .img-contenedor9{
+        background-image: url("img/meta25.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    #somos-meta .img-contenedor10{
+        background-image: url("img/meta24.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    #somos-meta .img-contenedor11{
+        background-image: url("img/meta21.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+    #somos-meta .img-contenedor12{
+        background-image: url("img/meta19.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    #somos-meta .img-contenedor13{
+        background-image: url("img/meta18.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+
+    #somos-meta .img-contenedor14{
+        background-image: url("img/meta22.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    #somos-meta .img-contenedor15{
+        background-image: url("img/meta20.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+
+    #somos-meta .img-contenedor16{
+        background-image: url("img/meta23.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+
+    #somos-meta .img-contenedor17{
+        background-image: url("img/meta28");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+
+    #somos-meta .img-contenedor18{
+        background-image: url("img/meta26.jpg");
+        background-size: contain;
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 300px; 
+    }
+
+
+    #nuestros-trabajos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-trabajos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-trabajos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-trabajos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-trabajos .carta{
+        padding: 40px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/meta2.jpg");
+
+    }
+    #caracteristicas{
+        background-image: url("img/meta1.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .contenedor{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    #menu__final li>a {
+        background-color: rgb(30,30,30);
+        color: white;
+        height: 20px;
+            width: 200px; 
+        display: block;
+        text-decoration: none;
+        min-width: 100px;
+      }
+      #menu__final li>a:hover{
+        color: rgb(250, 52, 168);
+        background-color:rgb(30,30,30);
+      }
+      #menu__final>li{
+        float:left;
+        text-align:center
+      }
+      #menu__final>li>ul{
+        display: none;
+      }
+      #menu__final>li:hover>ul {
+        display:block;
+      }
+      .social-bar{
+        position: relative;
+        right: 0;
+        top: 35%;
+        font-size: 1.5rem;
+        display: relative;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+        }
+          .icon{
+        color: white;
+        text-decoration: none;
+        padding: .7rem;
+        display: all .5%;
+         }
+          .icon-facebook2{
+        background: #2E406E;
+        border-radius: 1rem 0 0 0;
+         }
+         .icon-instagram{
+        background-color: #9400D3;
+         }
+         .icon-whatsapp{
+        background-color: #008000;
+         }
+         .icon:first-child{
+        border-radius: 1rem 0 0 0;
+         }
+         .icon:last-child{
+        border-radius: 0 0 0 1rem;
+         }
+         .icon:hover{
+        padding-right: 3rem;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 0 .5rem rgb(0, 0, 0, 0.42);
+         }   
+}
+
+
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+        background: white;
+    }
+} 
+body::-webkit-scrollbar {
+  width: 10px;             
+}
+
+body::-webkit-scrollbar-track {
+  background:white;    
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;    
+  border: 5px;       
+  border: 3px solid gray;
+}
